@@ -1,0 +1,133 @@
+/* div {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 5px solid #EE2455;
+    border-left-color: white;
+    animation: rotate 1s linear infinite;
+}
+
+div:hover {
+    animation-play-state: paused;
+}
+
+div::before {
+    content: "";
+    width: 130%;
+    height: 130%;
+    border-radius: 50%;
+    border: 5px solid blue;
+    border-right-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+div::after {
+    content: "";
+    width: 160%;
+    height: 160%;
+    border-radius: 50%;
+    border: 5px solid orange;
+    border-bottom-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes rotate {
+    to{
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}  */
+
+
+/* div {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 5px solid blue;
+    border-bottom-color: white;
+    animation: rotate 1s linear infinite;
+    animation-play-state: paused;
+    animation-fill-mode: forwards;
+}
+
+div:hover {
+    animation-play-state: running;
+}
+
+div:hover::before{
+    animation-play-state: running;
+}
+
+div:hover::after{
+    animation-play-state: running;
+}
+
+div::before {
+    content: "";
+    width: 130%;
+    height: 130%;
+    border-radius: 50%;
+    border: 5px solid orange;
+    border-bottom-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: rotate 3s linear infinite;
+    animation-play-state: paused;
+}
+
+div::after {
+    content: "";
+    width: 160%;
+    height: 160%;
+    border-radius: 50%;
+    border: 5px solid black;
+    border-bottom-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: rotate 5s linear infinite;
+    animation-play-state: paused;
+}
+
+@keyframes rotate {
+    to{
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}  */
+
+
+span {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ddd;
+    border: 5px solid black;
+    border-bottom-color: transparent;
+    animation: rotate 1s linear infinite reverse;
+}
+
+@keyframes rotate {
+    to{
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}

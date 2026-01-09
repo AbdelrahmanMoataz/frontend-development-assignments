@@ -1,0 +1,270 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* div {
+    display: flex;
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+    background-color: #EEEEEE;
+    border-radius: 50%;
+    color: #FF5722;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    box-shadow: 4px 0 0 0 #FF5722, -4px 0 0 0 #03A9F4;
+} */
+
+
+/* .parent {
+    margin: 0 auto;
+    display: flex;
+    background-color: #EEE;
+    width: 600px;
+    height: 300px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-between;
+    padding: 10px;
+}
+
+.parent div {
+    background-color: #F44336;
+    color: white;
+    width: calc((100% - 40px)/3);
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+
+/* .parent {
+    margin: 0 auto;
+    display: flex;
+    background-color: #EEE;
+    width: 600px;
+    height: 300px;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    padding: 10px;
+}
+
+.parent div {
+    background-color: #607D8B;
+    color: white;
+    width: calc((100% - 40px)/3);
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.one {
+    order: 6;
+    flex-basis: 40px;
+}
+
+.two {
+    order: 4;
+}
+
+.three {
+    order: 3;
+    flex-basis: 40px;
+}
+
+.four {
+    order: 5;
+}
+
+.five {
+    order: 2;
+}
+
+.six {
+    order: 1;
+} */
+
+
+/* .parent {
+    margin: 0 auto;
+    display: flex;
+    background-color: #EEE;
+    width: 600px;
+    height: 300px;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 10px;
+}
+
+.parent div {
+    background-color: #009688;
+    color: white;
+    width: calc((100% - 40px)/3);
+    height: calc((100% - 40px)/3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.one {
+    width: 30px !important;
+}
+
+.two {
+    align-self: flex-start;
+    width: 50% !important;
+}
+
+.three {
+    width: 30px !important;
+} */
+
+/* .parent {
+    margin: 0 auto;
+    display: flex;
+    background-color: #EEE;
+    width: 600px;
+    height: 300px;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 10px;
+}
+
+.parent div {
+    color: white;
+    width: calc((100% - 200px) / 4);
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.one {
+    align-self: flex-start;
+    background-color: #FF9800;
+}
+
+.two {
+    background-color: #8BC34A;
+}
+
+.three {
+    align-self: flex-start;
+    background-color: #795548;
+}
+
+.four {
+    order: -1;
+    background-color: #673AB7;
+} */
+
+/* Padding and Color of each element in page
+will be same */
+/* Make padding be part of set width using border-box */
+:root{
+    --mainColor: #DDDDDD;
+    --mainPadding: 10px;
+    box-sizing: border-box;
+}
+
+/* Unstyle unordered lists */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* make list items inline and put space between them */
+li {
+    display: inline;
+    margin: 0 5px;
+}
+
+/* Content of page is header, main-area and footer
+in that order and so we will make it column.
+make page take 95% of view height (vh) */
+.page {
+    background-color: #EEEEEE;
+    padding: 10px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    height: 95vh;
+}
+
+/* We will make header and footer take 5% of page
+we will leave a space of 5% for gaps in between
+and rest will be taken by main area */
+/* ------------ HEADER ------------ */
+.header {
+    display: flex;
+    justify-content: space-between;
+    height: 5%;
+}
+
+.logo {
+    background-color: var(--mainColor, black);
+    padding: var(--mainPadding, 5px);
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.links {
+    background-color: var(--mainColor, black);
+    padding: var(--mainPadding, 5px);
+    width: 85%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/* ------------ MAIN AREA ------------ */
+.main-area {
+    display: flex;
+    justify-content: space-between;
+    height: 85%;
+}
+
+.content {
+    background-color: var(--mainColor, black);
+    padding: var(--mainPadding, 5px);
+    width: 70%;
+}
+
+.sidebar {
+    background-color: var(--mainColor, black);
+    padding: var(--mainPadding, 5px);
+    width: 25%;
+}
+
+/* ------------ FOOTER ------------ */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    height: 5%;
+}
+
+.copyright {
+    background-color: var(--mainColor, black);
+    padding: var(--mainPadding, 5px);
+    width: 70%;
+    display: flex;
+    align-items: center;
+}
+
+.design {
+    background-color: var(--mainColor, black);
+    padding: var(--mainPadding, 5px);
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}

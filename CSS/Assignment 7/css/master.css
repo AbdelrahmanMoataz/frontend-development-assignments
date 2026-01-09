@@ -1,0 +1,171 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* div {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+}
+
+.blue{
+    background-color: blue;
+    z-index: 1;
+    top: 20px;
+    left: 20px;
+}
+
+.green{
+    background-color: green;
+    z-index: 2;
+    top: 40px;
+    left: 40px;
+}
+
+.red{
+    background-color: red;
+    z-index: 3;
+    top: 60px;
+    left: 60px;
+}
+
+.black{
+    background-color: black;
+    z-index: -1;
+    top: 40px;
+    left: 20px;
+} */
+
+
+/* div {
+    width: 400px;
+    position: relative;
+    left: calc(50% - 200px);
+    background-color: #EEEEEE;
+    border: 2px solid #F44336;
+    border-color: #F44336 #2196F3;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+span {
+    color: white;
+    position: absolute;
+    background-color: #2196F3;
+    width: 20px;
+    height: 15px;
+    padding: 5px;
+}
+
+.top-left {
+    top: -12.5px;
+    left: -15px;
+    border-right: 2px solid #F44336;
+}
+
+.top-right {
+    top: -12.5px;
+    right: -15px;
+    border-left: 2px solid #F44336;
+}
+
+.bottom-left {
+    bottom: -12.5px;
+    left: -15px;
+    border-right: 2px solid #F44336;
+}
+
+.bottom-right {
+    bottom: -12.5px;
+    right: -15px;
+    border-left: 2px solid #F44336;
+} */
+
+
+/* .parent {
+    width: 400px;
+    margin: 0 auto;
+    
+    list-style: none;
+    padding: 0px;
+}
+
+.parent li.c1 {
+    padding: 10px;
+    margin: 20px;
+    background-color: #EEE;
+}
+
+ol {
+    padding-left: 30px;
+    margin-top: 10px;
+}
+
+ol li {
+    background-color: white;
+    padding: 5px;
+    margin: 5px;
+}
+
+.jav {
+    padding-left: 0px;
+    margin-top: 10px;
+}
+
+.jav li {
+    background-color: white;
+    padding: 5px;
+    margin: 5px;
+    list-style-position: inside;
+} */
+
+table {
+    margin: 0 auto;
+    width: 700px;
+    text-align: center;
+    border-spacing: 1px;
+    border-bottom: 3px solid #009688;
+}
+
+caption {
+    font-weight: bold;
+    margin: 20px;
+}
+
+td {
+    padding: 20px;
+}
+
+thead td {
+    background-color: #404040;
+    color: white;
+    font-weight: bold;
+}
+
+tbody td {
+    background-color: #EEEEEE;
+}
+
+td img {
+    border: 3px solid white;
+    outline: 1px solid #CCCCCC;
+}
+
+td p {
+    display: inline-block;
+    margin: 2px;
+    color: white;
+    font-weight: bold;
+    font-size: smaller;
+    padding: 5px 10px;
+}
+
+.p1 {
+    background-color: #03A9F4;
+}
+
+.p2 {
+    background-color: #E91E63;
+}

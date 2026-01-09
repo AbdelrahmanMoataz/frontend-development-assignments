@@ -1,0 +1,44 @@
+/* div {
+    padding: 20px;
+    border: 5px solid red;
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+p {
+    background-color: lightgray;
+    border: inherit;
+    padding: inherit;
+    margin: 10px;
+} */
+
+
+.t1 {
+    font-family: "Open Sans", sans-serif;
+    font-style: italic;
+    font-weight: 300;
+}
+.t2 {
+    font-family: Cairo, sans-serif;
+    font-weight: 700;
+}
+.t3 {
+    font-family: Jomhuria, sans-serif;
+    font-weight: 400;
+}
+
+html {
+    font-size: 20px;
+    text-align: center;
+}
+
+.t4 {
+    font-size: 2.5rem;
+}
+.t5 {
+    font-size: 2rem;
+}
+.t6 {
+    font-size: 1.5rem;
+}

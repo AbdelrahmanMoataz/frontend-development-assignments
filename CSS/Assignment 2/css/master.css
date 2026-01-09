@@ -1,0 +1,50 @@
+/* Assignment 1 */
+/* div {
+    display: inline-block;
+    background-color: lightgray;
+    padding: 15px;
+    margin: 10px;
+    outline: 5px solid black;
+}
+
+.s1 {
+    border: 5px solid red;
+}
+
+.s2 {
+    border-width: 5px;
+    border-style: solid;
+    border-color: blue green;
+}
+
+.s3 {
+    border-width: 5px;
+    border-style: dashed;
+    border-color: red green blue yellow;
+} */
+
+/* Assignment 2 */
+/* Trick: use outline same color as that of background */
+div {
+    width: 400px;
+    display:block;
+    background-color: lightgray;
+    border-left: 5px solid;
+    padding: 10px;
+    margin: 20px;
+    outline: 10px lightgray solid;
+}
+
+/* Note that if an empty space exists in class of an element
+That means that element belongs to two classes, with 2nd class (after whitespace)
+being under first class. You separate them in css by placing a period in place of whitespace*/
+
+.element.element-1 {
+    border-left-color: red;
+}
+.element.element-2 {
+    visibility: hidden;
+}
+.element.element-3 {
+    border-left-color: green;
+}

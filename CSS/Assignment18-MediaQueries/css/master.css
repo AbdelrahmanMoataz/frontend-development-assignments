@@ -1,0 +1,132 @@
+body { 
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* @media print {
+    div {
+        font-size: 40px;
+    }
+} */
+
+* {
+    box-sizing: border-box;
+}
+
+/* .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.container div {
+    background-color: #EEE;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.container div::after {
+    content: "\AThis Is Product";
+    white-space: pre;
+    color: black;
+    font-size: 8px;
+    font-weight: normal;
+}
+
+@media (min-width: 768px) {
+    .container div{
+       color: red;
+       width: calc(50% - 1 * 10px / 2);
+    }
+}
+
+@media (min-width: 1200px) {
+    .container div{
+       color: #5FB9B1;
+       width: calc(25% - 3 * 10px / 4);
+    }
+} */
+
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    row-gap: 20px;
+}
+
+.container div {
+    background-color: #EEE;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    width: 100%;
+}
+
+.container div::after {
+    content: "\AThis Is Product";
+    white-space: pre;
+    color: black;
+    font-size: 8px;
+    font-weight: normal;
+}
+
+@media (min-width: 768px) {
+    .container {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas: "one one one" "two three four";
+        column-gap: 20px;
+    }
+
+    .container div{
+       color: red;
+    }
+
+    .one{
+        grid-area: one;
+    }
+
+    .two{
+        grid-area: two;
+    }
+
+    .three{
+        grid-area: three;
+    }
+
+    .four{
+        grid-area: four;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas: "one one" "two three" "four four";
+        column-gap: 20px;
+    }
+
+    .container div{
+       color: #5FB9B1;
+    }
+
+    .one{
+        grid-area: one;
+    }
+
+    .two{
+        grid-area: two;
+    }
+
+    .three{
+        grid-area: three;
+    }
+
+    .four{
+        grid-area: four;
+    }
+}

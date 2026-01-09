@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+}
+.menu {
+    margin: 50px auto;
+    display: flex;
+    width: 150px;
+    height: 100px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-around;
+    background-color: #DDD;
+    padding: 10px;
+    position: relative;
+}
+
+span {
+    width: 70%;
+    height: 15px;
+    background-color: black;
+    border-radius: 7.5px;
+    transition: 0.2s;
+}
+
+/* Calculation:
+7.5px -> half the height of span (of self)
+35px / 3 -> height of container is 100px, using padding of 
+10px and border-box box sizing, actual height is 80px. 
+Since we are using align-content space around, gap in between
+each span is (80 - 15 * 3) / 3 
+7.5px -> half the height of middle span
+*/
+.menu:hover > span:first-child {
+    background-color: red;
+    transform:  translateY(calc(7.5px + (35px)/3 + 7.5px)) rotate(45deg);
+}
+
+.menu:hover > span:last-child {
+    background-color: red;
+    transform:  translateY(calc(-1 * (7.5px + (35px)/3 + 7.5px))) rotate(-45deg);
+}
+
+.menu:hover > span:nth-child(2) {
+    opacity: 0;
+    transform:  translateX(-100px);
+}
