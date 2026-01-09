@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <form action="" method="get"> <!-- These are the defaults of the attribute already -->
+            <!-- Using new attributes readonly autofocus minlength and maxlength -->
+            <div>
+                <input type="hidden" name="token" value="b92f1fc2fce391ad7af633723afd3055">
+            </div>
+            <div>
+                <label>Email</label>
+                <input type="email" name="email" value="o@o.com" readonly>
+            </div>
+            <div>
+                <label>Username</label>
+                <input type="text" name="username" autofocus required minlength="5" maxlength="20">
+            </div>
+            <hr>
+            <!-- Using Radio buttons and Checkboxes -->
+            <div>
+                <label>Skills:</label><br>
+                <input type="checkbox" id="a" name="skills" value="Problem Solving" checked>
+                <label for="a">Problem Solving</label>
+            </div>
+            <div>
+                <input type="checkbox" id="b" name="skills" value="Logical Thinking">
+                <label for="b">Logical Thinking</label>
+            </div>
+            <div>
+                <input type="checkbox" id="c" name="skills" value="Advanced Search">
+                <label for="c">Advanced Search</label>
+            </div>
+            <div>
+                <input type="checkbox" id="d" name="skills" value="Analysis">
+                <label for="d">Analysis</label>
+            </div>
+            <div>
+                <input type="checkbox" id="e" name="skills" value="Planning">
+                <label for="e">Planning</label>
+            </div>
+            <hr>
+            <div>
+                <label>Job:</label><br>
+                <input type="radio" id="aa" name="job" value="Front-End Developer" checked>
+                <label for="aa">Front-End Developer</label>
+            </div>
+            <div>
+                <input type="radio" id="bb" name="job" value="Back-End Developer">
+                <label for="bb">Back-End Developer</label>
+            </div>
+            <div>
+                <input type="radio" id="cc" name="job" value="Business Analyst">
+                <label for="cc">Business Analyst</label>
+            </div>
+            <div>
+                <input type="radio" id="dd" name="job" value="Project Manager">
+                <label for="dd">Project Manager</label>
+            </div>
+            <div>
+                <input type="radio" id="ee" name="job" value="Scrum Master">
+                <label for="ee">Scrum Master</label>
+            </div>
+            <hr>
+            <!-- Using Select and Textarea -->
+            <div>
+                <label for="s1">Choose Book:</label>
+                <select name="programming" id="s1">
+                    <optgroup label="PHP">
+                        <option value="v5.0">v5.0</option>
+                        <option value="v7.0">v7.0</option>
+                        <option value="v8.0">v8.0</option>
+                    </optgroup>
+                    <optgroup label="Python">
+                        <option value="v2.0">v2.0</option>
+                        <option value="v3.0">v3.0</option>
+                        <option value="v3.9">v3.9</option>
+                    </optgroup>
+                </select>
+            </div>
+            <hr>
+            <div>
+                <textarea name="programming_desc" placeholder="Write Here Why You Want To Learn Programming" rows="10" cols="30"></textarea>
+            </div>
+            <hr>
+            <div>
+                <input type="submit" value="Send">
+            </div>
+            <div>
+                <input type="reset" value="Empty">
+            </div>
+        </form>
+    </body>
+</html>
